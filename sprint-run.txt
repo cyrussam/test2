@@ -1,0 +1,174 @@
+FkyU8hFbFWEf
+
+
+/usr/local/bin/redis-server
+/mazex/redis-stable/src
+
+/usr/local/bin/redis-server /etc/redis/8999.conf
+
+
+/usr/local/bin/redis-cli -p 8999 shutdown
+/usr/local/bin/redis-cli -p 8999 shutdown
+
+
+/mazex/tomcat/bin/startup.sh
+/mazex/tomcat/bin/shutdown.sh
+
+/mazex/tomcat-aid/bin/startup.sh
+/mazex/tomcat-aid/bin/shutdown.sh
+
+
+Installation
+
+git clone https://github.com/taniarascia/vue-tutorial
+
+D:\work\download\mazex_v2-nocode\web
+run web:
+npm run dev
+
+cd vue-tutorial
+yarn
+yarn serve
+
+----------------------------------------------------------
+mvn spring-boot:run
+mvn clean spring-boot:run
+
+------------------------
+/mazex/tomcat/webapps/WebRoot/WEB-INF/classes/spring
+-------------------------
+build:
+mvn clean install
+mvn install
+
+execute:
+java –jar ./target/<JARFILE> 
+
+run test:
+mvn test
+
+/etc/init.d/redis_6379 stop
+
+/etc/init.d/redis_6379 start
+
+redis set edis  IP: "161.117.194.46", port : 6379, password: 123456
+
+------------------------
+http://localhost:8080/h2-console/
+
+gradle clean test
+gradle clean test - x test
+gradlew test   --stacktrace --scan
+gradle clean build
+
+gradlew clean war
+gradlew clean bootRun --stacktrace --scan
+gradlew clean bootRun -Dspring.profiles.active=localhost --stacktrace --scan
+
+----------------------------------------------------------------
+Make sure redis started
+https://redis.io/topics/quickstart Test: redis-cli ping Startup: redis-server Shutdown: redis-cli shutdown
+
+Change password to 123456: redis-cli 
+config set requirepass 123456 
+AUTH 123456 exit
+
+redis-cli AUTH 123456
+
+---------------------------------------------------
+mazexplayer005@gmail.com
+
+wazrem-Fefro4-pyjkyq
+
+
+
+Selected config:
+Port           : 6379
+Config file    : /etc/redis/6379.conf
+Log file       : /var/log/redis_6379.log
+Data dir       : /var/lib/redis/6379
+Executable     : /usr/local/bin/redis-server
+Cli Executable : /usr/local/bin/redis-cli
+
+----------------------------------------------------------------
+Building and running the Spring Boot application
+
+To build the executable jar you can execute the following command:
+
+./gradlew bootJar
+
+
+java -jar build/libs/gradle-spring-boot-project.jar
+
+Another way to run the application is by executing the following Gradle command:
+
+./gradlew bootRun
+
+
+tools
+-------
+(1.) https://reqres.in/
+     https://swapi.co/
+(2.) Postman
+
+## https://techbeacon.com/app-dev-testing/5-top-open-source-api-testing-tools-how-choose
+----------------------------------------------------------------
+
+Change the UI theme?
+In the Settings/Preferences dialog Ctrl+Alt+S , 
+select Appearance & Behavior | Appearance.
+
+----------------------------------------------------------------
+curl -i -X POST -d username=user -d password=userPass
+
+#########################################################################
+#########################################################################
+
+
+open redis configuration file
+
+sudo nano /etc/redis/redis.conf 
+
+set passphrase
+
+replace
+
+# requirepass foobared
+
+with
+
+requirepass YOURPASSPHRASE
+
+restart redis
+
+redis-server restart
+
+/////////////////////////////////////////////////////////////////////
+
+ps -ef | grep tomcat
+
+netstat -a | grep 8080
+
+//////////////////////////////////////////////////////////////////////
+/opt/redis3/src/redis-cli -p 6379 shutdown
+
+where 6379 is the default port.
+
+Option 2: find redis process and kill
+
+
+pkill -9 -f tomcat
+
+///////////////////////////////////////////////////////////////////////
+
+ps aux | grep redis-server
+
+killall redis-server
+ps -ef | grep -i 'redis-server'
+kill -9 PID owned by redis
+killAll 
+
+
+
+
+
